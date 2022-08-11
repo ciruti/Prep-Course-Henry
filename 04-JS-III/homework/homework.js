@@ -3,18 +3,24 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  var shift = array.shift()
+  return shift
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  var pop = array.pop()
+  return pop;
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  
+  return array.length;
 }
 
 
@@ -23,6 +29,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var nvoArray = [];
+  for (var i = 0 ; i < array.length ; i++ ){
+    nvoArray[i] = array[i] + 1;
+  }
+  return nvoArray;
 }
 
 
@@ -30,6 +41,10 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+var nvoarray [];
+nvoarray = array.push(elemento);
+return nvoarray;
+
 }
 
 
